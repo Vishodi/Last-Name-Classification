@@ -11,7 +11,6 @@ pipeline_tag: text-classification
 
 Below is an example of a beautifully formatted, detailed README file in Markdown. Replace the placeholder values (such as `"YOUR_CRYPTO_ID"`, repository links, etc.) with your actual details.
 
-```markdown
 # Name Validation AI
 
 [![Support](https://img.shields.io/badge/Support-Me-brightgreen)](https://www.example.com/donate?crypto=YOUR_CRYPTO_ID)
