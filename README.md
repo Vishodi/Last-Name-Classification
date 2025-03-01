@@ -9,17 +9,16 @@ base_model:
 pipeline_tag: text-classification
 ---
 
-# Last Name Classification Model
-
+# <h2>Last Name Classification Model</h2>
 [![Support](https://img.shields.io/badge/Support-Me-brightgreen)](https://www.example.com/donate?crypto=YOUR_CRYPTO_ID)
 
-A simple Transformer-based classifier that checks if a provided last name is likely to be **real** (LABEL_1) or **fake** (LABEL_0). This can be helpful in validating contact form submissions, preventing bot entries, or for general name classification tasks.
+A  Transformer-based classifier that checks if a provided last name is likely to be **real** (LABEL_1) or **fake** (LABEL_0). This can be helpful in validating contact form submissions, preventing bot entries, or for general name classification tasks.
 
 ---
 ## Table of Contents
 
 - [Overview](#overview)
-- [Features](#features)
+- [Project Structure](#roject_structure)
 - [Installation](#installation)
 - [Usage](#usage)
   - [Training](#training)
