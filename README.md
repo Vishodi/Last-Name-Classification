@@ -9,16 +9,11 @@ base_model:
 pipeline_tag: text-classification
 ---
 
-# Name Validation AI
+# Last Name Classification Model
 
 [![Support](https://img.shields.io/badge/Support-Me-brightgreen)](https://www.example.com/donate?crypto=YOUR_CRYPTO_ID)
 
-Name Validation AI is an intelligent system that classifies first names as **real** or **fake**. This project demonstrates two primary approaches:
-
-- **Reinforcement Learning Approach:** A custom Gym environment coupled with a PPO agent.
-- **Transformer-based Approach:** Fine-tuning a transformer model (using Hugging Face Transformers) for binary classification with the final model saved in the `.safetensors` format.
-
-Both models are equipped with detailed testing (including confusion matrix visualization) and API deployment capabilities.
+A simple Transformer-based classifier that checks if a provided last name is likely to be **real** (LABEL_1) or **fake** (LABEL_0). This can be helpful in validating contact form submissions, preventing bot entries, or for general name classification tasks.
 
 ---
 
@@ -63,25 +58,38 @@ The goal of this project is to determine if a given first name is "real" (from a
    ```bash
    pip install -r requirements.txt
    ```
-
-   > **Note:** If you're using Google Colab, you can run each provided code block directly.
-
-3. **Dependencies:**
-
-   - `transformers`
-   - `datasets`
-   - `safetensors`
-   - `stable-baselines3`
-   - `gym`
-   - `flask`
-   - `scikit-learn`
-   - `seaborn`
-   - `huggingface_hub`
-
 ---
 
 ## Usage
 
+```bash
+from transformers import pipeline
+
+# Replace with your model directory or Hugging Face model hub link
+model_dir = "/kaggle/input/name-dataset/transformers_name_classifier_safetensors"
+
+# Load the model pipeline
+classifier = pipeline(
+    "text-classification",
+    model=model_dir,
+    tokenizer=model_dir,
+    framework="pt"
+)
+
+# Test the model
+test_names = ["musk", "zzzzzz", "uhyhu", "trump"]
+for name in test_names:
+    result = classifier(name)
+    label = result[0]['label']
+    score = result[0]['score']
+    print(f"Name: {name} => Prediction: {label}, Score: {score:.4f}")
+```
+```bash
+Name: musk   => Prediction: LABEL_1, Score: 0.9167
+Name: zzzzzz => Prediction: LABEL_0, Score: 0.9991
+Name: uhyhu  => Prediction: LABEL_0, Score: 0.9944
+Name: trump  => Prediction: LABEL_1, Score: 0.9998
+```
 ### Training
 
 - **Reinforcement Learning Model:**  
