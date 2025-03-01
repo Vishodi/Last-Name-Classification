@@ -62,7 +62,7 @@ The goal of this project is to determine if a given first name is "real" (from a
 
 ## Usage
 
-```bash
+```python
 from transformers import pipeline
 
 # Replace with your model directory or Hugging Face model hub link
