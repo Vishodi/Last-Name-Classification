@@ -16,7 +16,6 @@ pipeline_tag: text-classification
 A simple Transformer-based classifier that checks if a provided last name is likely to be **real** (LABEL_1) or **fake** (LABEL_0). This can be helpful in validating contact form submissions, preventing bot entries, or for general name classification tasks.
 
 ---
-
 ## Table of Contents
 
 - [Overview](#overview)
@@ -30,7 +29,6 @@ A simple Transformer-based classifier that checks if a provided last name is lik
 - [Project Structure](#project-structure)
 - [Support Me](#support-me)
 - [License](#license)
-
 ---
 
 ## Overview
@@ -41,6 +39,24 @@ The goal of this project is to determine if a given first name is "real" (from a
 - **Transformer Fine-tuning:** Leveraging a pre-trained DistilBERT model with Hugging Face’s Trainer API.
 - **Deployment:** Code for a Flask API for real-time inference.
 - **Model Hosting:** Support for pushing the model (in `.safetensors` format) to a private Hugging Face repository, ensuring seamless CPU/GPU usage.
+
+---
+## Project Structure
+
+```
+Last_Name_Prediction/
+├── .gitattributes
+├── README.md
+├── config.json
+├── model.safetensors
+├── requirements.txt
+├── special_tokens_map.json
+├── tokenizer.json
+├── tokenizer_config.json
+└── vocab.txt
+
+```
+---
 
 ## Installation
 
@@ -61,7 +77,7 @@ The goal of this project is to determine if a given first name is "real" (from a
 ---
 
 ## Usage
-
+Python
 ```python
 from transformers import pipeline
 
@@ -105,26 +121,6 @@ Name: trump  => Prediction: LABEL_1, Score: 0.9998
 
 - **Flask API:**  
   Deploy a Flask API to accept a first name as input and return a prediction (real or fake) in real time.
-
----
-
-## Project Structure
-
-```
-Last_Name_Prediction/
-├── .gitattributes
-├── README.md
-├── config.json
-├── model.safetensors
-├── requirements.txt
-├── special_tokens_map.json
-├── tokenizer.json
-├── tokenizer_config.json
-└── vocab.txt
-
-```
-
----
 
 ## Support Me
 
