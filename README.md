@@ -105,22 +105,6 @@ Name: zzzzzz => Prediction: LABEL_0, Score: 0.9991
 Name: uhyhu  => Prediction: LABEL_0, Score: 0.9944
 Name: trump  => Prediction: LABEL_1, Score: 0.9998
 ```
-### Training
-
-- **Reinforcement Learning Model:**  
-  Use the provided training notebook/code block to set up the custom Gym environment and train a PPO agent for name validation.
-
-- **Transformer-based Model:**  
-  Fine-tune a transformer model (e.g., DistilBERT) on a balanced dataset of real and fake names. The final model is saved in `.safetensors` format for robust, secure, and efficient storage.
-
-### Testing
-
-- **Confusion Matrix:**  
-  Run the testing code block to evaluate the transformer-based model. The block collects predictions on a test set, computes a confusion matrix, and visualizes the results using Seaborn.
-
-- **Flask API:**  
-  Deploy a Flask API to accept a first name as input and return a prediction (real or fake) in real time.
-
 ## Support Me
 
 If you find this project helpful and would like to support my work, please consider donating using crypto.
