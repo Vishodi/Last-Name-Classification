@@ -18,14 +18,9 @@ A  Transformer-based classifier that checks if a provided last name is likely to
 ## Table of Contents
 
 - [Overview](#overview)
-- [Project Structure](#roject_structure)
+- [Project Structure](#project_structure)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Training](#training)
-  - [Testing](#testing)
-  - [API Deployment](#api-deployment)
-  - [Push to Hugging Face](#push-to-hugging-face)
-- [Project Structure](#project-structure)
 - [Support Me](#support-me)
 - [License](#license)
 ---
