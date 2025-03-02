@@ -17,24 +17,12 @@ A  Transformer-based classifier that checks if a provided last name is likely to
 ---
 ## Table of Contents
 
-- [Overview](#overview)
 - [Project Structure](#project_structure)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Support Me](#support-me)
 - [License](#license)
----
 
-## Overview
-
-The goal of this project is to determine if a given first name is "real" (from a curated dataset) or "fake" (randomly generated). The project includes:
-
-- **Custom Reinforcement Learning Setup:** Using OpenAI Gym and PPO for training.
-- **Transformer Fine-tuning:** Leveraging a pre-trained DistilBERT model with Hugging Face’s Trainer API.
-- **Deployment:** Code for a Flask API for real-time inference.
-- **Model Hosting:** Support for pushing the model (in `.safetensors` format) to a private Hugging Face repository, ensuring seamless CPU/GPU usage.
-
----
 ## Project Structure
 
 ```
