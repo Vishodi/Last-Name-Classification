@@ -61,7 +61,7 @@ classifier = pipeline(
 )
 
 # Test the model
-test_names = ["kiara", "zzzzzz", "uhyhu", "trump"]
+test_names = ["musk", "zzzzzz", "uhyhu", "trump"]
 for name in test_names:
     result = classifier(name)
     label = result[0]['label']
