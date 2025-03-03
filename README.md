@@ -10,7 +10,7 @@ pipeline_tag: text-classification
 ---
 
 # <h2>Last Name Classification Model</h2>
-[![Support](https://img.shields.io/badge/Support-Me-brightgreen)](https://www.example.com/donate?crypto=YOUR_CRYPTO_ID)
+[![Support](https://img.shields.io/badge/Support-Us-brightgreen)](https://nowpayments.io/donation/Vishodi))
 
 A  Transformer-based classifier that checks if a provided last name is likely to be **real** (LABEL_1) or **fake** (LABEL_0). This can be helpful in validating contact form submissions, preventing bot entries, or for general name classification tasks.
 
@@ -63,19 +63,18 @@ Python
 ```python
 from transformers import pipeline
 
-# Replace with your model directory or Hugging Face model hub link
-model_dir = "/kaggle/input/name-dataset/transformers_name_classifier_safetensors"
+# Replace with your model repository
+model_dir = "vishodi/Last-Name-Classification"
 
-# Load the model pipeline
+# Load the model pipeline with authentication
 classifier = pipeline(
     "text-classification",
     model=model_dir,
     tokenizer=model_dir,
-    framework="pt"
 )
 
 # Test the model
-test_names = ["musk", "zzzzzz", "uhyhu", "trump"]
+test_names = ["kiara", "zzzzzz", "uhyhu", "trump"]
 for name in test_names:
     result = classifier(name)
     label = result[0]['label']
@@ -91,8 +90,8 @@ Name: trump  => Prediction: LABEL_1, Score: 0.9998
 ## Support Me
 
 If you find this project helpful and would like to support my work, please consider donating using crypto.
-<a href="https://www.example.com/donate?crypto=YOUR_CRYPTO_ID" target="_blank">
-  <img src="https://img.shields.io/badge/Support-Me-brightgreen" alt="Support Me">
+<a href="https://nowpayments.io/donation/Vishodi" target="_blank">
+  <img src="https://img.shields.io/badge/Support-Us-brightgreen" alt="Support Me">
 </a>
 
 ---
