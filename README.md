@@ -10,7 +10,7 @@ pipeline_tag: text-classification
 ---
 
 # <h2>Last Name Classification Model</h2>
-[![Support](https://img.shields.io/badge/Support-Us-brightgreen)](https://nowpayments.io/donation/Vishodi))
+[![Support](https://img.shields.io/badge/Support-Us-brightgreen)](https://nowpayments.io/donation/Vishodi)
 
 A  Transformer-based classifier that checks if a provided last name is likely to be **real** (LABEL_1) or **fake** (LABEL_0). This can be helpful in validating contact form submissions, preventing bot entries, or for general name classification tasks.
 
@@ -45,7 +45,7 @@ Last_Name_Prediction/
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your_username/name-validation-ai.git
+   git clone https://github.com/Vishodi/Last-Name-Classification.git
    cd name-validation-ai
    ```
 
@@ -103,4 +103,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 *Contributions, issues, and feature requests are welcome! Feel free to fork the repository and open a pull request.*
-```
