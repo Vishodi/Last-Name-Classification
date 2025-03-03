@@ -74,31 +74,4 @@ classifier = pipeline(
 
 # Test the model
 test_names = ["kiara", "zzzzzz", "uhyhu", "trump"]
-for name in test_names:
-    result = classifier(name)
-    label = result[0]['label']
-    score = result[0]['score']
-    print(f"Name: {name} => Prediction: {label}, Score: {score:.4f}")
-
-bash
-Name: musk   => Prediction: LABEL_1, Score: 0.9167
-Name: zzzzzz => Prediction: LABEL_0, Score: 0.9991
-Name: uhyhu  => Prediction: LABEL_0, Score: 0.9944
-Name: trump  => Prediction: LABEL_1, Score: 0.9998
-
-## Support Me
-
-If you find this project helpful and would like to support my work, please consider donating using crypto.
-<a href="https://nowpayments.io/donation/Vishodi" target="_blank">
-  <img src="https://img.shields.io/badge/Support-Us-brightgreen" alt="Support Me">
-</a>
-
----
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-*Contributions, issues, and feature requests are welcome! Feel free to fork the repository and open a pull request.*
+for name
