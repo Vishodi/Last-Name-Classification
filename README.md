@@ -77,9 +77,8 @@ Name: uhyhu  => Prediction: LABEL_0, Score: 0.9944
 Name: trump  => Prediction: LABEL_1, Score: 0.9998
 ```
 
-## Support Me
-If you find this project helpful and would like to support my work, please consider donating using crypto.
-[![Support Me](https://img.shields.io/badge/Support-Us-brightgreen)](https://nowpayments.io/donation/Vishodi)
+## Support Us
+[![Support Us](https://img.shields.io/badge/Support-Us-brightgreen)](https://nowpayments.io/donation/Vishodi)
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
