@@ -81,4 +81,4 @@ Name: trump  => Prediction: LABEL_1, Score: 0.9998
 [![Support Us](https://img.shields.io/badge/Support-Us-brightgreen)](https://nowpayments.io/donation/Vishodi)
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License.
